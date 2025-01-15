@@ -1,0 +1,87 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-image: url("https://i.pinimg.com/originals/d9/26/22/d92622fe86a52fb5537d3857e73baf03.jpg");
+    background-attachment: fixed; 
+    background-repeat: repeat-x; 
+} 
+
+header, footer { 
+    background-color: rgb(53, 66, 74); 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+} 
+
+h2 {
+    color: hsl(0, 100%, 50%);
+}
+
+nav { 
+    margin: 20px 0; 
+}
+
+nav a { 
+    color: #1a4194; 
+    text-decoration: none; 
+    margin: 0 15px; 
+}
+
+.product-image { 
+    width: 100%; 
+    max-width: 400px; 
+}
+
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif; 
+}
+
+.container { 
+    width: 80%; 
+    margin: auto; 
+    overflow: hidden; 
+} 
+
+section { 
+    margin-bottom: 20px; 
+} 
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    border: 1px solid #ddd; 
+} 
+
+th, td { 
+    padding: 10px; 
+    text-align: left; 
+} 
+
+th { 
+    background-color: rgb(53, 66, 74); 
+    color: white; 
+} 
+
+form { 
+    margin: 20px 0; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    background: white; 
+    box-sizing: border-box;
+}
+
+form input, form textarea, form select { 
+    width: calc(100% - 22px);
+    padding: 10px; 
+    margin-bottom: 10px; 
+    box-sizing: border-box;
+} 
+
+p { 
+    margin-bottom: 50px; 
+} 
+
+h1 { 
+    color: #995015d0; 
+}

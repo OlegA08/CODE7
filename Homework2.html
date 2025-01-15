@@ -1,149 +1,95 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Онлайн-магазин</title>
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Онлайн-магазин</title> 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header, footer {
-            background-color: #35424a;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: black;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #35424a;
-            color: white;
-        }
-        form {
-            margin: 20px 0;
-            padding: 10px;
-            border: 1px solid #ddd;
-            background: white;
-        }
-        form input, form textarea, form select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 50px;
+        .body1 {
+            background-color: #9fbfe3;
         }
     </style>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css"> 
+</head> 
+<body class="body1"> 
 
-<header>
-    <h1>Добро пожаловать в наш онлайн-магазин!</h1>
-</header>
+<header> 
+    <h1 style="color: whitesmoke;">Добро пожаловать в наш онлайн-магазин!</h1> 
+</header> 
 
-<nav>
-    <a href="#products">Товары</a>
-    <a href="#feedback">Обратная связь</a>
-</nav>
+<nav> 
+    <a class="nav a" href="#products">Товары</a> 
+    <a class="nav a" href="#feedback">Обратная связь</a> 
+</nav> 
 
-<div class="container">
+<div class="container"> 
 
-    <section id="products">
-        <h1>Наши товары</h1>
-        <article>
-            <h3>Пельмешки</h3>
-            <img src="https://img.restoclub.ru/uploads/place/7/a/4/3/7a43f2dbeefd4addddd3f9e140e0e988_w1200_h630.webp" alt="Пельмешки" width="400" height="300">
-            <p class="p">Много мяса, мало теста.</p>
-        </article>
-        <article>
-            <h3>Тесто</h3>
-            <img src="https://i.pinimg.com/originals/c8/6a/61/c86a61f9892ba2288316fc46846e1d12.jpg" alt="Тесто" width="400" height="300">
-            <p class="p">Много теста, нету мяса.</p>
-        </article>
-        <article>
-            <h3>Сыр косичка</h3>
-            <img src="https://static.insales-cdn.com/images/products/1/2449/199395729/%D0%A1%D1%8B%D1%80_%D0%BA%D0%BE%D0%BF%D1%87%D1%91%D0%BD%D1%8B%D0%B9_%D0%9A%D0%BE%D1%81%D0%B8%D1%87%D0%BA%D0%B0.jpg" alt="Сыр косичка" width="400" height="300">
-            <p class="p">Сыр косичка - это база.</p>
-        </article>
+    <section id="products"> 
+        <h1>Наши товары</h1> 
+        <article> 
+            <h3>Пельмешки</h3> 
+            <img class="product-image" src="https://img.restoclub.ru/uploads/place/7/a/4/3/7a43f2dbeefd4addddd3f9e140e0e988_w1200_h630.webp" alt="Пельмешки" width="400" height="300"> 
+            <p class="p">Много мяса, мало теста.</p> 
+        </article> 
+        <article> 
+            <h3>Тесто</h3> 
+            <img class="product-image" src="https://i.pinimg.com/originals/c8/6a/61/c86a61f9892ba2288316fc46846e1d12.jpg" alt="Тесто" width="400" height="300"> 
+            <p class="p">Много теста, нету мяса.</p> 
+        </article> 
+        <article> 
+            <h3>Сыр косичка</h3> 
+            <img class="product-image" src="https://static.insales-cdn.com/images/products/1/2449/199395729/%D0%A1%D1%8B%D1%80_%D0%BA%D0%BE%D0%BF%D1%87%D1%91%D0%BD%D1%8B%D0%B9_%D0%9A%D0%BE%D1%81%D0%B8%D1%87%D0%BA%D0%B0.jpg" alt="Сыр косичка" width="400" height="300"> 
+            <p class="p">Сыр косичка - это база.</p> 
+        </article> 
 
-        <h1>Список товаров</h1>
-        <table>
-            <caption>Доступные товары</caption>
-            <tr>
-                <th>Название</th>
-                <th>Цена</th>
-                <th>Описание</th>
-            </tr>
-            <tr>
-                <td>Пельмешки</td>
-                <td>250 руб.</td>
-                <td>Вкусненько!</td>
-            </tr>
-            <tr>
-                <td>Тесто</td>
-                <td>150 руб.</td>
-                <td>Слепи пельмешки сам!</td>
-            </tr>
-            <tr>
-                <td>Сыр косичка</td>
-                <td>300 руб.</td>
-                <td>Это великолепно!</td>
-            </tr>
-        </table>
+        <h1>Список товаров</h1> 
+        <table> 
+            <caption>Доступные товары</caption> 
+            <tr> 
+                <th>Название</th> 
+                <th>Цена</th> 
+                <th>Описание</th> 
+            </tr> 
+            <tr> 
+                <td>Пельмешки</td> 
+                <td>250 руб.</td> 
+                <td>Вкусненько!</td> 
+            </tr> 
+            <tr> 
+                <td>Тесто</td> 
+                <td>150 руб.</td> 
+                <td>Слепи пельмешки сам!</td> 
+            </tr> 
+            <tr> 
+                <td>Сыр косичка</td> 
+                <td>300 руб.</td> 
+                <td>Это великолепно!</td> 
+            </tr> 
+        </table> 
 
-        <h2>Наше промо-видео</h2>
-        <video controls src="#" width="600" height="400">Ваш браузер не поддерживает видео.</video>
-    </section>
+        <h2>Наше промо-видео</h2> 
+        <video controls src="#" width="600" height="400">Ваш браузер не поддерживает видео.</video> 
+    </section> 
 
-    <section id="feedback">
-        <h2>Обратная связь</h2>
-        <form>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" name="name" required>
+    <section id="feedback"> 
+        <h2>Обратная связь</h2> 
+        <form> 
+            <label for="name">Ваше имя:</label> 
+            <input type="text" id="name" name="name" required> 
 
-            <label for="email">Электронная почта:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email">Электронная почта:</label> 
+            <input type="email" id="email" name="email" required> 
 
-            <label for="category">Категория запроса:</label>
-
+            <label for="category">Категория запроса:</label> 
             <select id="category" name="category">
-                <option value="покупка">Покупка</option>
-                <option value="возврат">Возврат</option>
-                <option value="жалоба">Жалоба</option>
+                <option value="product">Запрос о продукте</option>
+                <option value="service">Запрос о сервисе</option>
+                <option value="other">Другое</option>
             </select>
-
-            <label for="message">Сообщение:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
+            
+            <label for="message">Ваше сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+            
             <button type="submit">Отправить</button>
         </form>
 
@@ -153,9 +99,9 @@
 
 </div>
 
-<footer>
-    <p>© 2024 Вымышленный онлайн-магазин. Все права НЕ защищены.</p>
-</footer>
+<footer> 
+    <p>© 2025 Онлайн-магазин. Все права НЕ защищены.</p> 
+</footer> 
 
-</body>
+</body> 
 </html>
