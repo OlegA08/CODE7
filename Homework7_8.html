@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завершение макета с анимациями</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Общие стили для блоков */
+        .block {
+            padding: 20px;
+            color: white;
+        }
+
+        /* Блок 1 - Добро пожаловать */
+        .block-1 {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://via.placeholder.com/1920x300/333/fff?text=Block+1');
+            background-size: cover;
+        }
+
+        /* Блок 2 - Обратная связь */
+        .block-2 {
+            background-color: #f3f3f3;
+            padding: 20px;
+            color: black;
+            flex-direction: column;
+        }
+
+        /* Блок 3 - Следите за нами */
+        .block-3 {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://via.placeholder.com/1920x300/666/fff?text=Block+3');
+            background-size: cover;
+        }
+
+        /* Блок 4 - Продукты */
+        .block-4 {
+            padding: 20px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: #ccc;
+            padding: 20px;
+            margin: 10px;
+            flex-basis: calc(33% - 20px);
+            text-align: center;
+        }
+
+        /* Блок 5 - Мы лидеры на агрорынке */
+        .block-leader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-image: linear-gradient(rgba(255, 204, 0, 0.7), rgba(255, 204, 0, 0.7)), url('https://via.placeholder.com/1920x300/ffcc00/fff?text=We+are+Leader+in+Agriculture+Market');
+            background-size: cover;
+        }
+
+        .button {
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            background-color: #006400; 
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, outline 0.3s;
+        }
+
+        .button:hover {
+            background-color: #005300; 
+        }
+
+        .button:focus {
+            outline: 2px solid #ffcc00;
+        }
+
+        .button:active {
+            transform: scale(0.95); 
+        }
+
+        /* Блок 6 - Форма обратной связи */
+        .block-5 {
+            padding: 20px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .grid-form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+
+        .grid-form input,
+        .grid-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 100%;
+            transition: border-color 0.3s, background-color 0.3s;
+        }
+
+        .grid-form input:hover,
+        .grid-form textarea:hover {
+            border-color: #ffcc00; /* Изменение рамки при наведении */
+        }
+
+        .grid-form input:focus,
+        .grid-form textarea:focus {
+            outline: 2px solid #ffcc00; /* Обводка при фокусе */
+        }
+
+        .grid-form button {
+            grid-column: span 2;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .grid-form button:hover {
+            background-color: #555; /* Изменение фона при наведении */
+        }
+
+        .grid-form button:active {
+            transform: scale(0.95); /* Эффект нажатия */
+        }
+
+        .content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="block block-1">
+        <div class="content">
+            <h1>Добро пожаловать!</h1>
+            <button class="button">Начать</button>
+        </div>
+    </div>
+
+    <div class="block block-2">
+        <h2>WHAT THEY’RE TALKING ABOUT</h2>
+        <div class="testimonial">
+            <p>Отличный сервис!</p>
+            <p>- Иван</p>
+        </div>
+        <div class="testimonial">
+            <p>Очень понравилось!</p>
+            <p>- Анна</p>
+        </div>
+    </div>
+
+    <div class="block block-3">
+        <div class="content">
+            <h1>Следите за нами!</h1>
+        </div>
+    </div>
+
+    <div class="block block-4">
+        <h2>Providing High Quality Products</h2>
+        <div class="products">
+            <div class="product">Продукт 1</div>
+            <div class="product">Продукт 2</div>
+            <div class="product">Продукт 3</div>
+        </div>
+    </div>
+
+    <div class="block block-leader">
+        <div class="content">
+            <h2>We are Leader in Agriculture Market</h2>
+            <button class="button">Learn More</button>
+        </div>
+    </div>
+
+    <div class="block block-5">
+        <h2>GET IN TOUCH NOW</h2>
+        <div class="grid-form">
+            <input type="text" placeholder="Ваше имя">
+            <input type="email" placeholder="Ваш email">
+            <textarea placeholder="Ваше сообщение"></textarea>
+            <button>Отправить сообщение</button>
+        </div>
+    </div>
+
+</body>
+</html>
